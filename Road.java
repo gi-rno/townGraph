@@ -14,7 +14,7 @@ public class Road implements Comparable<Road>{
 	
 	private int distance; // in miles
 	
-	public Road(String edgeName, Town t1, Town t2, int distance) {
+	public Road(Town source, Town destination, int degrees, String name) {
 		
 		town1 = t1;
 		
@@ -23,6 +23,11 @@ public class Road implements Comparable<Road>{
 		this.distance = distance;
 		
 		this.edgeName = edgeName;
+	}
+	
+	public Road(Town source, Town destination, String name) {
+		
+		
 	}
 	
 	public String getEdgeName() {
